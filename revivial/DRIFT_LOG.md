@@ -30,3 +30,5 @@
 - Cross-repo Linux build/staging update:
   - `gamecq/revivial/scripts/build-linux-server-bootstrap.ps1` + builder container now compile `libDarkSpace.so` and `DarkSpaceServer` into `darkspace/out/server-bootstrap/Release`.
   - `gamecq/revivial/scripts/stage-server-binaries.ps1` stages these artifacts into `gamecq/revivial/runtime/bin`.
+- Cross-repo runtime data staging update:
+  - `gamecq/revivial/scripts/stage-darkspace-data.ps1` now stages `darkspace/Ports/*` into `gamecq/revivial/runtime/data` for DarkSpace server context/resource loading.

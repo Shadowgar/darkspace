@@ -19,6 +19,7 @@
 Current staging path:
 
 - `gamecq/revivial/scripts/stage-server-config.ps1` rewrites `DarkSpaceServer/config.ini` into `gamecq/revivial/runtime/config/config.ini` for container paths and service-host defaults.
+- `gamecq/revivial/scripts/stage-darkspace-data.ps1` copies `darkspace/Ports/*` into `gamecq/revivial/runtime/data` for world/context resources.
 - `gamecq/revivial/scripts/build-linux-server-bootstrap.ps1` builds `libDarkSpace.so` and `DarkSpaceServer` via legacy Linux makefiles into `darkspace/out/server-bootstrap/Release`.
 - `gamecq/revivial/scripts/stage-server-binaries.ps1` stages `libDarkSpace.so` and `DarkSpaceServer` into `gamecq/revivial/runtime/bin`.
 
