@@ -32,3 +32,9 @@
   - `gamecq/revival/scripts/stage-server-binaries.ps1` stages these artifacts into `gamecq/revival/runtime/bin`.
 - Cross-repo runtime data staging update:
   - `gamecq/revival/scripts/stage-darkspace-data.ps1` now stages `darkspace/Ports/*` into `gamecq/revival/runtime/data` for DarkSpace server context/resource loading.
+- Planning reset:
+  - `revival/GRAND_PLAN.md`
+  - `revival/REVIVAL_PLAN.md`
+    - darkspace is now explicitly server-first for revival work
+    - dedicated server stabilization is prioritized ahead of client and renderer modernization
+    - workflow now requires static code sweeps and short smoke tests before longer runtime checks

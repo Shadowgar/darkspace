@@ -1,12 +1,13 @@
-# DarkSpace Revival (Server/Web Scope)
+# DarkSpace Revival
 
-This folder is the source of truth for all server-side revival work inside the `darkspace` repo.
+This folder is the source of truth for revival planning and runtime integration work inside the `darkspace` repo.
 
 ## Scope in this repo
 
 - `DarkSpaceServer` runtime defaults and server configs
-- `DarkSpaceServerMFC` launcher/admin server utilities
-- Deployment/automation scripts under `Build`
+- `DarkSpaceServerMFC` launcher and admin server utilities
+- `DarkSpaceClient`, gameplay code, UI, and content/runtime packaging
+- Deployment and automation scripts under `Build`
 - Legacy web solution pointer (`Web.sln`) and related server-side references
 
 ## Drift control rules
@@ -17,13 +18,11 @@ This folder is the source of truth for all server-side revival work inside the `
   - `gamecq/revival/DRIFT_LOG.md`
   - `medusa/revival/DRIFT_LOG.md`
 
-## Current objective
+## Planning docs
 
-Containerize server-side stack first. Client/runtime game UX work is out of scope until server stack is stable.
-
-## Modernization track
-
-- See `MODERNIZATION_PLAN.md` for server-side modernization sequencing while client modernization remains deferred.
+- `GRAND_PLAN.md`: cross-repo strategy that ties `darkspace`, `gamecq`, and `medusa` together
+- `REVIVAL_PLAN.md`: repo-specific audit and execution plan for gameplay, client, server, and content
+- `MODERNIZATION_PLAN.md`: earlier tactical modernization notes retained for continuity
 
 Primary orchestration contract currently lives in:
 
