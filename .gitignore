@@ -24,3 +24,7 @@ KeyManifest.txt
 multiverse/
 ReleaseLinux/
 .Constants.ini.swo
+
+# Revival generated artifacts
+out/
+revival/out/

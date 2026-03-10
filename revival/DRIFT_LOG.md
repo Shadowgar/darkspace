@@ -2,7 +2,7 @@
 
 ## 2026-03-10
 
-- Initialized `darkspace/revivial/` documentation baseline:
+- Initialized `darkspace/revival/` documentation baseline:
   - `README.md`
   - `COMPONENT_MAP.md`
   - `MODERNIZATION_PLAN.md`
@@ -24,11 +24,11 @@
 - Replaced hardcoded historical remote build login string in project metadata with placeholder value:
   - `builder@example.invalid:22` now used instead of prior credential-like host string.
 - Cross-repo container contract update:
-  - `gamecq/revivial/scripts/stage-server-config.ps1` now stages `DarkSpaceServer/config.ini` to `gamecq/revivial/runtime/config/config.ini` and rewrites network/path defaults for container runtime:
+  - `gamecq/revival/scripts/stage-server-config.ps1` now stages `DarkSpaceServer/config.ini` to `gamecq/revival/runtime/config/config.ini` and rewrites network/path defaults for container runtime:
     - `metaAddress=metaserver`
     - bind address and data/log/storage paths aligned to compose-mounted runtime directories.
 - Cross-repo Linux build/staging update:
-  - `gamecq/revivial/scripts/build-linux-server-bootstrap.ps1` + builder container now compile `libDarkSpace.so` and `DarkSpaceServer` into `darkspace/out/server-bootstrap/Release`.
-  - `gamecq/revivial/scripts/stage-server-binaries.ps1` stages these artifacts into `gamecq/revivial/runtime/bin`.
+  - `gamecq/revival/scripts/build-linux-server-bootstrap.ps1` + builder container now compile `libDarkSpace.so` and `DarkSpaceServer` into `darkspace/out/server-bootstrap/Release`.
+  - `gamecq/revival/scripts/stage-server-binaries.ps1` stages these artifacts into `gamecq/revival/runtime/bin`.
 - Cross-repo runtime data staging update:
-  - `gamecq/revivial/scripts/stage-darkspace-data.ps1` now stages `darkspace/Ports/*` into `gamecq/revivial/runtime/data` for DarkSpace server context/resource loading.
+  - `gamecq/revival/scripts/stage-darkspace-data.ps1` now stages `darkspace/Ports/*` into `gamecq/revival/runtime/data` for DarkSpace server context/resource loading.

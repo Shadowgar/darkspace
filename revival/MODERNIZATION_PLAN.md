@@ -17,7 +17,7 @@ This plan covers modernization work in `darkspace` that affects server runtime n
 ## Phase 2: Build and Packaging Alignment
 
 - Produce container-consumable server binary outputs.
-- Align with `gamecq/revivial/runtime/` artifact contract.
+- Align with `gamecq/revival/runtime/` artifact contract.
 - Add reproducible build docs and CI checks.
 
 ## Phase 3: Engine Interface Adaptation
