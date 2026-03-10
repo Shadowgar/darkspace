@@ -97,7 +97,7 @@ int RunServer( void * pINI )
 	serverContext.nClientFlags = settings.get( "clientFlags", (dword)0 );
 	serverContext.nModFlags = settings.get( "modFlags", MetaClient::MODERATOR|MetaClient::ADMINISTRATOR|MetaClient::DEVELOPER );
 	serverContext.bPublish = settings.get( "publish", 1 ) != 0;
-	serverContext.sMetaAddress = settings.get( "metaAddress", "meta-server.darkspace.net" );
+	serverContext.sMetaAddress = settings.get( "metaAddress", "127.0.0.1" );
 	//serverContext.sMetaAddress = settings.get( "metaAddress", "meta-server.beta.darkspace.net" );
 	serverContext.nMetaPort = settings.get( "metaPort", 9000 );
 	serverContext.nUniverseContext = universeContext.key();
@@ -106,8 +106,8 @@ int RunServer( void * pINI )
 	serverContext.bBalanced = settings.get( "balanced", 1 ) != 0;
 	serverContext.bClan = settings.get( "clan", 1 ) != 0;
 	serverContext.bTutorial = settings.get( "tutorial", (dword)0 ) != 0;
-	serverContext.user = settings.get( "user", "DSS" );
-	serverContext.password = settings.get( "password", "darkspace" );
+	serverContext.user = settings.get( "user", "" );
+	serverContext.password = settings.get( "password", "" );
 	serverContext.nSessionId = settings.get( "sessionId", (dword)0 );
 	serverContext.gameId = settings.get( "gameId", 1 );
 	

@@ -10,7 +10,7 @@ echo Building DarkSpace Installer...
 if errorlevel 1 goto :Error
 
 echo Commiting binary updates
-svn --username builder --password god2899 commit ..\..\. -m "Installer Build"
+svn --username builder commit ..\..\. -m "Installer Build"
 
 goto :Done
 

@@ -391,7 +391,7 @@ void CServerDlg::OnTimer(UINT nIDEvent)
 			Settings settings( CharString( pApp->m_ServerKey ) );
 
 			MirrorClient mirror;
-			if ( mirror.open( settings.get( "MirrorAddress", "mirror-server.darkspace.net"), 
+			if ( mirror.open( settings.get( "MirrorAddress", "127.0.0.1"), 
 				settings.get( "MirrorPort", 9101), ".\\", false ) ) 
 			{
 				dword crc = mirror.getCRC();
@@ -442,7 +442,7 @@ void CServerDlg::OnStart()
 	//serverContext.sMasterAddress = settings.get( "masterAddress", "" );
 	//serverContext.nMasterPort = settings.get( "masterPort", 9000 );
 	serverContext.bPublish = settings.get( "publish", 1 ) != 0;
-	serverContext.sMetaAddress = settings.get( "metaAddress", "meta-server.darkspace.net" );
+	serverContext.sMetaAddress = settings.get( "metaAddress", "127.0.0.1" );
 	serverContext.nMetaPort = settings.get( "metaPort", 9000 );
 	serverContext.nUniverseContext = WidgetKey( settings.get( "context", "15530459713961322492" ) );
 	serverContext.maxPlayers = settings.get( "maxPlayers", 32 );

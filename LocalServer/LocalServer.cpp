@@ -61,7 +61,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	//serverContext.sMasterAddress = "";
 	//serverContext.nMasterPort = 9000;
 	serverContext.bPublish = false;
-	serverContext.sMetaAddress = settings.get( "metaAddress", "meta-server.darkspace.net" );
+	serverContext.sMetaAddress = settings.get( "metaAddress", "127.0.0.1" );
 	serverContext.nMetaPort = settings.get( "metaPort", 9000 );
 	serverContext.nUniverseContext = universeContext.key();
 	serverContext.maxRank = CHIEF_MARSHAL;

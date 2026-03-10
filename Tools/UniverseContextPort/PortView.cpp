@@ -480,7 +480,7 @@ void CPortView::OnRun()
 		ini += "port=9010\r\n";
 		ini += "maxClients=1\r\n";
 		ini += "publish=0\r\n";
-		ini += "metaAddress=vm4.palestar.com\r\n";		// connect to the beta meta server..
+		ini += "metaAddress=127.0.0.1\r\n";		// connect to the beta meta server..
 
 		CharString iniFile;
 		iniFile.format( "%sDSServer.ini", tempDir );
